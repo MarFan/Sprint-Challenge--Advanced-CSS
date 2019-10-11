@@ -1,1 +1,40 @@
 // Navigation code here
+
+.mainNav{
+
+    background-color: @nav-bg;
+    font-family: @nav-font;
+    border-bottom: 1px solid @nav-border;
+
+    .container {
+
+        .displayFlex(center, column, center);
+        
+        h1{
+            font-size: 4rem;
+            padding: 1% 0;
+        }
+
+        nav{
+            
+            .displayFlex(space-between, row, center);
+            width: 50%;
+            margin-bottom: 4px;
+
+            @media @phone {
+                width: 80%;
+            }
+
+            a {
+                padding: 1rem 0;
+                text-decoration: none;
+                color: @ebony-clay;
+                font-size: 1.6rem;
+
+                @media @phone {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
